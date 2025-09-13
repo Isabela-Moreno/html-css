@@ -3,18 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iframe</title>
+    <title>Desafio 13</title>
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
+        table {
+            width: 400px;
+            text-align: center;
         }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        th {
+            border: 1px solid black;
+            background-color: gray;
+            color: white;
+        }
+
+        caption {
+            border: 1px solid black;
+            border-bottom: 0px;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
     </style>
 </head>
 <body>
-    <h1>Teste com iframe</h1>
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam iure doloribus est temporibus voluptate asperiores nihil dolorum fuga eos facere eius quos officiis excepturi ratione, at dolores qui accusantium. Aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero quia velit rem exercitationem! Ducimus, eaque inventore atque tenetur culpa in. Debitis quibusdam tempore eum excepturi vitae nihil doloribus delectus assumenda.
-    </p>
+    <h1>Primeira tabela</h1>
 
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+
+    <h1>Segunda tabela</h1>
+
+
+    <table>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td colspan="4">N</td>
+        </tr>
+    </table>
+
+    <h1>Terceira tabela</h1>
+
+    <table style="width: 600px; border-collapse: collapse;">
+        <caption>
+            FILMES FAVORITOS
+        </caption>
+        <thead>
+            <tr>
+                <th>Grupo</th>
+                <th>Nomes</th>
+                <th colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3">Homens</th>
+                <td>Bruno</td>
+                <td>Intocaveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <td>Daniel</td>
+            <td>Wall e</td>
+            <td>Oldboy</td>
+            <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano</td>
+                <td>Star Wars</td>
+                <td>Taxi driver</td>
+                <td>Toy story</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Quarta tabela</h1>
+
+    <table style="border-collapse: collapse; width: 500px;">
+        <thead>
+            <tr>
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Discplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" style="background-color: white; color: black;">Exatas</th>
+                <td>Matématica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4">Média de exatas</th>
+                <th>0.0</th>
+            </tr>
+            <tr>
+                <th rowspan="2" style="color: black; background-color: white;">Humanas</th>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4">Média de humanas</th>
+                <th>0.0</th>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
