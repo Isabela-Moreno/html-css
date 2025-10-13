@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    background-color: lightpink;
+}
+
+header {
+    background-color: rgb(228, 226, 226);
+    width: 90vw;
+    margin: auto;
+
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: block;
+}
+
+nav > ul {
+    list-style-type: none;
+
+}
+
+nav > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(202, 150, 195);
+    color: white;
+    border-top: 2px solid rgb(201, 201, 201);
+}
+
+nav > ul > li > a:hover {
+    background-color: pink;
+}
+
+main {
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    text-align: justify;
+}
